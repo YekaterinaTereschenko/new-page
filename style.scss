@@ -1,0 +1,425 @@
+@use 'mixin.scss';
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+$container-width: 1440px;
+
+.container {
+    width: $container-width;
+    margin: auto;
+    // overflow-x: hidden;
+}
+
+.header {
+    @include mixin.width(1440, 1064);
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    &-nav {
+        display: flex;
+        font-size: 16px;
+
+        .header-ul {
+            display: flex;
+            gap: 28px;
+            padding-right: 97px;
+        }
+    }
+}
+
+.title {
+    @include mixin.width(1440, 1440);
+    background-color: #F0EFEB;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-text {
+        @include mixin.width(1440, 544);
+        margin: 90px 73px 90px 164px;
+        h1 {
+            font-size: 60px;
+        }
+        p {
+            font-size: 24px;
+            padding: 42px 0 26px 0;
+        }
+
+        &-btn {
+            font-size: 17px;
+            background-color: black;
+            color: white;
+            border-radius: 100px;
+            padding: 7px 23px 9px;
+        }
+    }
+}
+
+.sellers {
+    width: 100%;
+    text-align: center;
+
+    &-text {    
+        padding: 60px 0 88px 0;
+        
+        h3 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 20px;
+            @include mixin.width(1440, 632);
+            margin: auto;
+        }
+        &-one {
+            padding: 27px 0 47px ;
+        }
+    }
+
+    &-our {
+        font-size: 36px;
+    }
+
+    &-best {
+        @include mixin.width(1440, 1064);
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-between;
+
+        &-one , &-two , &-three {
+            padding: 57px 0 248px;
+            
+            h4 {
+                @include mixin.width(314.66, 156);
+                margin: auto;
+                padding: 27px 0 17px;
+                font-size: 17px;
+            }
+            a {
+                color: black;
+                border-bottom: 2px solid black;
+                font-size: 17px;
+                padding: 10px 0 0;
+            }
+        }
+    }
+}
+
+.people {
+    width: 100%;
+    display: flex;
+    background: #CCCCCC4D;
+    
+    padding: 75px 0 51px 88px;
+
+    &-content {
+        @include mixin.width(1440, 1164);
+        display: flex;
+        align-items: center;
+        margin: auto;
+
+        img {
+            @include mixin.width(1164, 385);
+            margin-right: 50px;
+        }
+
+        &-text {
+            @include mixin.width(1164, 532);
+            h3 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 36px;
+                // @include mixin.width(532, 498);
+                padding: 31px 0 40px;
+            }
+
+            a {
+                color: black;
+                font-size: 17px;
+                border-bottom: 2px solid black;
+            }
+        }
+
+    }
+
+    &-second {
+        background: #CCCCCC99;
+        text-align: end;
+        
+        .people-content {
+            justify-content: end;
+        }
+
+        img {
+            margin: 0 88px 0 50px;
+        }
+    }
+
+    &-last {
+        p {
+            @include mixin.width(532, 540);
+        }
+    }
+}
+
+.circles {
+    @include mixin.width(1440, 1280);
+    margin: auto;
+    padding: 190px 0 51px 0;
+    text-align: center;
+    font-size: 36px;
+
+    &-content {
+        @include mixin.width(1280, 1088);
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 69.33px;
+        gap: 110px 0;
+
+        .circle {
+            width: 33.33%;
+            
+            h3 {
+                padding-top: 26px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.each {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    h3 {
+        font-size: 36px;
+    }
+
+    &-blocks {
+        @include mixin.width(1440, 1064);
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 100px;
+        padding: 102px 0 52px 0;
+        &-block {
+            h3 {
+                font-size: 22px;
+                padding: 35px 0 40px 0;
+            }
+
+            p {
+                padding-bottom: 44px;
+            }
+
+            a {
+                border-bottom: 2px solid black;
+                color: black;
+            }
+        }
+    }
+
+    .gray {
+        width: 100%;
+        height: 480px;
+        position: absolute;
+        background: #F0F0F0;
+        z-index: -1;
+        bottom: 0;
+    }
+}
+
+.keep {
+    width: 100%;
+    text-align: center;
+    padding: 77px 0 88px 0;
+    h3 {
+        font-size: 36px;
+    }
+    h4 {
+        font-size: 17px;
+        padding: 9px 0 26px
+    }
+
+    &-forms {
+        @include mixin.width(1440, 366);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        input {
+            height: 39px;
+        }
+
+        &-form {
+            display: flex;
+            justify-content: space-between;
+            input {
+                @include mixin.width(366, 153);
+            }
+        }
+
+        button {
+            margin: auto;
+            color: white;
+            background-color: black;
+            border-radius: 100px;
+            padding: 7px 23px;
+            @include mixin.width(366, 115);
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    padding: 50px 0 44px;
+    color: white;
+    background-color: black;
+    p {
+        text-align: center;
+        margin-top: 8px;
+    }
+    &-content {
+        @include mixin.width(1440, 1144);
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        p {
+            text-align: start;
+            padding-bottom: 36px;
+        }
+
+        li {
+            padding-bottom: 12px;
+        }
+    }
+}
+
+@media screen and (max-width:376px) {
+    // $container-width: 376px;
+
+    .container {
+        width: 100%;
+    }
+    .header-nav {
+        display: none;
+    }
+
+    .header-icons {
+        display: none;
+    }
+
+    .header img {
+        margin: auto;
+    }
+
+    .title {
+        flex-direction: column-reverse;
+        &-text {
+            margin: 5%;
+            width: 90%;
+            text-align: center;
+            h1{
+                font-size: 30px;
+            }
+            p {
+                font-size: 19px;
+                padding: 2%;
+            }
+        }
+        &-image img{
+            width: 90%;
+        }
+    }
+
+    .sellers {
+        &-text {
+            width: 90%;
+            margin: auto;
+            p {
+                width: 90%;
+            }
+        }
+
+        &-best {
+            width: 90%;
+            &-one , &-two , &-three {
+                padding: 0 0 10% 0;
+            }
+        }
+    }
+
+    .people {
+        padding: 10% 0;
+        &-content {
+            flex-wrap: wrap;          
+            width: 90%;
+            img {
+                width: 80%;
+                margin: auto;
+            }
+            &-text {
+                text-align: center;
+                width: 90%;
+                margin: auto;
+                p {
+                    font-size: 19px;
+                    padding: 5% 0;
+                }
+                h4 {
+                    padding-bottom: 5%;
+                }
+            }
+        }
+    }
+
+    .circles {
+        padding: 10% 0;
+        &-text {
+            font-size: 30px;
+            width: 90%;
+            margin: auto;
+        }
+        &-content {
+            gap: 20px 0;
+            .circle {
+                h3 {
+                    font-size: 18px; 
+                }
+            }
+        }
+    }
+
+    .each {
+        .gray {
+            display: none;
+        }
+    }
+
+    .keep {
+        &-forms {
+            width: 90%;
+        }
+    }
+
+   .footer {
+        &-content {
+            display: none;
+            
+        }
+    }
+
+
+}
