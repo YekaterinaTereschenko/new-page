@@ -178,7 +178,6 @@
 .each-blocks {
   width: 73.8888888889%;
   display: flex;
-  flex-wrap: wrap;
   margin: auto;
   gap: 100px;
   padding: 102px 0 52px 0;
@@ -356,6 +355,9 @@
 
   .each .gray {
     display: none;
+  }
+  .each-blocks {
+    flex-wrap: wrap;
   }
 
   .keep-forms {

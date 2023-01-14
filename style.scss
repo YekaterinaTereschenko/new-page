@@ -210,7 +210,7 @@ $container-width: 1440px;
     &-blocks {
         @include mixin.width(1440, 1064);
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         margin: auto;
         gap: 100px;
         padding: 102px 0 52px 0;
@@ -405,6 +405,9 @@ $container-width: 1440px;
     .each {
         .gray {
             display: none;
+        }
+        &-blocks {
+            flex-wrap: wrap;
         }
     }
 
